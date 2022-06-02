@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 
-const MONGODB_URI = `mongodb+srv://pottenwalder:emtcMKLtQP5OQRkc@cluster0.cjkjp.mongodb.net/?retryWrites=true&w=majority`;
+const MONGODB_URI = process.env.MONGODB_URI;
 
 mongoose
   .connect(MONGODB_URI, {
